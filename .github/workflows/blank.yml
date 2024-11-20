@@ -18,8 +18,7 @@ jobs:
         python-version: '3.x'  # Specify your desired Python version
 
     - name: Install dependencies
-      run: |
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      run:  pip install -r requirements.txt
 
     - name: Run Python script
       run: python redpinbar.py  # Replace 'script.py' with your actual script name
